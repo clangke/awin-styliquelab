@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exclusive Limited-Time Offer!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background: #fef6e4;
+    }
+    .button {
+      background: #ff0050;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin: 20px;
+    }
+    .countdown {
+      font-size: 18px;
+      color: #ff0050;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 TikTok Followers Exclusive Deal!</h1>
+  <p>Your discount link will auto-redirect in <span id="countdown">3</span> seconds...</p>
+  <a href="https://www.awin1.com/cread.php?s=3024031&v=24841&q=426691&r=1851510" class="button">Jump Now (Manual Click)</a>
+
+  <script>
+    // 3-second countdown then auto-redirect
+    let time = 3;
+    const countdownEl = document.getElementById("countdown");
+    const timer = setInterval(() => {
+      time--;
+      countdownEl.textContent = time;
+      if (time <= 0) {
+        clearInterval(timer);
+        window.location.href = "https://www.awin1.com/cread.php?s=3024031&v=24841&q=426691&r=1851510";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
+
